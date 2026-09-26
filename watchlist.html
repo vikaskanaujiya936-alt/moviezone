@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieZone - Watchlist</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🎬 MovieZone
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Genres</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="login.html">Sign In</a>
+        </nav>
+
+    </header>
+
+
+    <main class="movies">
+
+        <div class="section-title">
+
+            <h2>❤️ My Watchlist</h2>
+
+            <a href="index.html">
+                ← Back to Movies
+            </a>
+
+        </div>
+
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+
+                <div class="poster">
+                    🎬
+                </div>
+
+                <h3>Avengers</h3>
+
+                <p>
+                    ⭐ 8.5 &nbsp; • &nbsp; 2026
+                </p>
+
+                <span class="genre">
+                    Action
+                </span>
+                <button class="remove-btn" onclick="removeFromWatchlist()">
+    🗑️ Remove
+</button>
+            </div>
+
+        </div>
+
+    </main>
+   <script src="script.js"></script>
+</body>
+
+</html>
+function removeFromWatchlist() {
+    localStorage.removeItem("watchlistMovie");
+
+    alert("Movie removed from Watchlist.");
+
+    window.location.reload();
+}
