@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieZone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+
+        <div class="logo">
+            🎬 MovieZone
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="genres.html">Genres</a>
+            <a href="#">Watchlist</a>
+            <a href="login.html">Sign In</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="search">
+            🔍
+            <input type="text" id="searchInput" placeholder="Search movies...">
+        </div>
+
+    </header>
+
+
+    <!-- Main Website -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="tag">
+                    #1 MOVIE DISCOVERY
+                </p>
+
+                <h1>
+                    Discover Your
+                    <br>
+                    Next Favorite Movie
+                </h1>
+
+                <p>
+                    Explore trending movies, popular releases
+                    and top-rated films all in one place.
+                </p>
+
+                <button>
+                    Explore Movies →
+                </button>
+
+            </div>
+
+        </section>
+        <div class="genre-filter">
+
+    <button onclick="filterMovies('all')">All</button>
+    <button onclick="filterMovies('Action')">Action</button>
+    <button onclick="filterMovies('Adventure')">Adventure</button>
+    <button onclick="filterMovies('Sci-Fi')">Sci-Fi</button>
+    <button onclick="filterMovies('Thriller')">Thriller</button>
+
+</div>
+
+        <!-- Trending Movies -->
+        <section class="movies">
+            <div class="genre-filter">
+    <button onclick="filterMovies('all')">All</button>
+    <button onclick="filterMovies('Action')">Action</button>
+    <button onclick="filterMovies('Adventure')">Adventure</button>
+    <button onclick="filterMovies('Sci-Fi')">Sci-Fi</button>
+    <button onclick="filterMovies('Thriller')">Thriller</button>
+</div>
+
+            <div class="section-title">
+
+                <h2>
+                    🔥 Trending Movies
+                </h2>
+
+                <a href="#">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <!-- Movie Cards -->
+<div class="movie-grid">
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">
+    <img src="images/avengers.jpg" alt="Avengers">
+</div>
+        <h3>Avengers</h3>
+        <p>⭐ 8.5 &nbsp; • &nbsp; 2026</p>
+        <span class="genre">Action</span>
+    </div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">🕷️</div>
+        <h3>Spider-Man</h3>
+        <p>⭐ 8.2 &nbsp; • &nbsp; 2025</p>
+        <span class="genre">Adventure</span>
+    </div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">🚀</div>
+        <h3>Interstellar</h3>
+        <p>⭐ 8.8 &nbsp; • &nbsp; 2024</p>
+        <span class="genre">Sci-Fi</span>
+    </div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">🌀</div>
+        <h3>Inception</h3>
+        <p>⭐ 9.0 &nbsp; • &nbsp; 2023</p>
+        <span class="genre">Thriller</span>
+    </div>
+
+</div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">
+            🕷️
+        </div>
+        <h3>Spider-Man</h3>
+        <p>⭐ 8.2 &nbsp; • &nbsp; 2025</p>
+        <span class="genre">Adventure</span>
+    </div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">
+            🚀
+        </div>
+        <h3>Interstellar</h3>
+        <p>⭐ 8.8 &nbsp; • &nbsp; 2024</p>
+        <span class="genre">Sci-Fi</span>
+    </div>
+
+    <div class="movie-card" onclick="window.location.href='movie.html'">
+        <div class="poster">
+            🌀
+        </div>
+        <h3>Inception</h3>
+        <p>⭐ 9.0 &nbsp; • &nbsp; 2023</p>
+        <span class="genre">Thriller</span>
+    </div>
+
+</div>
+
+                    <h3>
+                        Avengers
+                    </h3>
+
+                    <p>
+                        ⭐ 8.5 &nbsp; • &nbsp; 2026
+                    </p>
+
+                </div>
+
+
+                <!-- Movie 2 -->
+                <div class="movie-card">
+
+                    <div class="poster">
+                        🎥
+                    </div>
+
+                    <h3>
+                        Spider-Man
+                    </h3>
+
+                    <p>
+                        ⭐ 8.2 &nbsp; • &nbsp; 2025
+                    </p>
+
+                </div>
+
+
+                <!-- Movie 3 -->
+                <div class="movie-card">
+
+                    <div class="poster">
+                        🍿
+                    </div>
+
+                    <h3>
+                        Interstellar
+                    </h3>
+
+                    <p>
+                        ⭐ 8.8 &nbsp; • &nbsp; 2024
+                    </p>
+
+                </div>
+
+
+                <!-- Movie 4 -->
+               <div class="movie-grid">
+
+    <!-- Movie 1 -->
+    <div class="movie-card" onclick="window.location.href='movie.html'"> 
+
+    </div>
+        <div class="poster poster-1">
+            🎬
+        </div>
+
+        <h3>Avengers</h3>
+
+        <p>
+            ⭐ 8.5 &nbsp; • &nbsp; 2026
+        </p>
+
+        <span class="genre">
+            Action
+        </span>
+    </div>
+
+
+    <!-- Movie 2 -->
+    <div class="movie-card" onclick="openMovie()">
+        <div class="poster poster-2">
+            🕷️
+        </div>
+
+        <h3>Spider-Man</h3>
+
+        <p>
+            ⭐ 8.2 &nbsp; • &nbsp; 2025
+        </p>
+
+        <span class="genre">
+            Adventure
+        </span>
+    </div>
+
+
+    <!-- Movie 3 -->
+    <div class="movie-card" onclick="openMovie()">
+        <div class="poster poster-3">
+            🚀
+        </div>
+
+        <h3>Interstellar</h3>
+
+        <p>
+            ⭐ 8.8 &nbsp; • &nbsp; 2024
+        </p>
+
+        <span class="genre">
+            Sci-Fi
+        </span>
+    </div>
+
+
+    <!-- Movie 4 -->
+    <div class="movie-card" onclick="openMovie()">
+        <div class="poster poster-4">
+            🌀
+        </div>
+
+        <h3>Inception</h3>
+
+        <p>
+            ⭐ 9.0 &nbsp; • &nbsp; 2023
+        </p>
+
+        <span class="genre">
+            Thriller
+        </span>
+    </div>
+
+</div>
+
+                    <h3>
+                        Inception
+                    </h3>
+
+                    <p>
+                        ⭐ 9.0 &nbsp; • &nbsp; 2023
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

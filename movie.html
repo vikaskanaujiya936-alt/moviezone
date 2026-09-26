@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details - MovieZone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            🎬 MovieZone
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Genres</a>
+            <a href="#">Watchlist</a>
+            <a href="login.html">Sign In</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Movie Details -->
+    <main class="movie-details">
+
+        <div class="movie-poster">
+            🎬
+        </div>
+
+
+        <div class="movie-info">
+
+            <p class="tag">
+                FEATURED MOVIE
+            </p>
+
+            <h1>Avengers</h1>
+
+            <div class="movie-meta">
+                ⭐ 8.5
+                <span>•</span>
+                2026
+                <span>•</span>
+                Action
+            </div>
+
+            <p class="description">
+                Earth's greatest heroes come together to protect
+                the world from powerful threats. Experience an
+                exciting adventure filled with action, teamwork
+                and unforgettable moments.
+            </p>
+
+            
+    <div class="stars">
+        <button onclick="rateMovie(1)">★</button>
+        <button onclick="rateMovie(2)">★</button>
+        <button onclick="rateMovie(3)">★</button>
+        <button onclick="rateMovie(4)">★</button>
+        <button onclick="rateMovie(5)">★</button>
+    </div>
+
+    <p id="ratingMessage">
+        Choose a rating
+    </p>
+     <div class="movie-buttons">
+
+    <button onclick="watchTrailer()">
+        ▶ Watch Trailer
+    </button>
+
+    <button class="watchlist-btn" onclick="addToWatchlist()">
+        ❤️ Add to Watchlist
+    </button>
+
+</div>
+
+
+<!-- Rating -->
+
+<div class="rating-box">
+
+    <h3>⭐ Rate this movie</h3>
+
+    <div class="stars">
+        <button onclick="rateMovie(1)">★</button>
+        <button onclick="rateMovie(2)">★</button>
+        <button onclick="rateMovie(3)">★</button>
+        <button onclick="rateMovie(4)">★</button>
+        <button onclick="rateMovie(5)">★</button>
+    </div>
+
+    <p id="ratingMessage">
+        Choose a rating
+    </p>
+
+</div>
+
+
+<!-- Review -->
+
+<div class="review-box">
+
+    <h3>💬 Write a Review</h3>
+
+    <textarea
+        id="reviewText"
+        placeholder="Write your review..."
+    ></textarea>
+
+    <button onclick="submitReview()">
+        Submit Review
+    </button>
+
+    <p id="reviewMessage"></p>
+
+</div>
+</div>
+</button>
+                
+
+                <button class="watchlist-btn" onclick="addToWatchlist()">
+    ❤️ Add to Watchlist
+</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

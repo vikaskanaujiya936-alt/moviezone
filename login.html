@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieZone - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-box">
+
+            <div class="login-logo">🎬</div>
+
+            <h1>Welcome Back</h1>
+            <p>Sign in to continue to MovieZone</p>
+
+            <form onsubmit="loginUser(event)"></form>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+
+                <button type="submit">Sign In</button>
+
+            </form>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="#">Create Account</a>
+            </p>
+
+            <a class="back-home" href="index.html">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+    <script>
+function loginUser(event) {
+    event.preventDefault();
+
+    alert("Login successful! 🎬");
+
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>
